@@ -1,0 +1,4 @@
+var repeat_count is 5
+
+repeat repeat_count times:
+    show.log("Hello from Mlang!")

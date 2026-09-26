@@ -1,0 +1,8 @@
+var name is "rey"
+
+if name is "rey":
+    show.log("Hello rey!")
+elif name is "Rey":
+    show.log("Hello Rey!")
+else:
+    show.log("Hello Anonymous!")

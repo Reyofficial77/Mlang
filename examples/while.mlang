@@ -1,0 +1,9 @@
+var running is true
+var count is 0
+
+repeat while running:
+    show.log(count)
+    var count is count + 1
+
+    if count is 5:
+        var running is false
