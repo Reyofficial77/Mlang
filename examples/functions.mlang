@@ -1,0 +1,27 @@
+function greet(name):
+    show.log("Hello, " + name + "!")
+
+greet("Rey")
+
+function add(a, b):
+    return a + b
+
+show.log("3 + 4 =", add(3, 4))
+
+function factorial(n):
+    if n is less than or equal to 1:
+        return 1
+    return n * factorial(n - 1)
+
+show.log("5! =", factorial(5))
+
+function classify(n):
+    if n greater than 0:
+        return "positive"
+    elif n is 0:
+        return "zero"
+    else:
+        return "negative"
+
+for each n in [-2, 0, 7]:
+    show.log(n, "is", classify(n))

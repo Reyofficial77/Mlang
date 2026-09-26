@@ -9,7 +9,7 @@ def main():
         print("Mlang - English-like programming language")
         print()
         print("Usage:")
-        print("  python -m mlang -m run <file.mlang>")
+        print("  python -m mlang run <file.mlang>")
         print("  python -m mlang --version")
         return 0
 
@@ -17,8 +17,8 @@ def main():
         print(f"Mlang {__version__}")
         return 0
 
-    if len(args) == 3 and args[0] == "-m" and args[1] == "run":
-        path = args[2]
+    if len(args) == 2 and args[0] == "run":
+        path = args[1]
         try:
             with open(path, "r", encoding="utf-8") as f:
                 run_source(f.read())
@@ -31,7 +31,7 @@ def main():
             return 1
 
     print("Mlang error: invalid command.")
-    print("Usage: python -m mlang -m run <file.mlang>")
+    print("Usage: python -m mlang run <file.mlang>")
     return 1
 
 if __name__ == "__main__":
